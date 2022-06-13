@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Кирилл Кузнецов](https://up.htmlacademy.ru/javascript/26/user/2034395).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Устименко](https://htmlacademy.ru/profile/spiritmoon).
 
 ---
 
