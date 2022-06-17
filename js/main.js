@@ -47,5 +47,29 @@ const getRandomFloat = (min, max, float) => {
   return {error, message, result};
 };
 
-getRandomInteger(0, 10);
-getRandomFloat(0, 10, 3);
+const lat = getRandomFloat(35.65000, 35.70000, 5).result;
+const lng = getRandomFloat(35.65000, 35.70000, 5).result;
+
+const advertisement = {
+  author: {
+    avatar: `img/avatars/user${getRandomInteger(1, 10).result}.png`,
+  },
+  offer:  {
+    title: 'Тестовый заголовок объявления',
+    address: `${lat}, ${lng}`,
+    price: getRandomInteger(1, 100000).result,
+    type: 'palace', // palace / flat / house / bungalow / hotel
+    rooms: getRandomInteger(1, 5).result,
+    guests: getRandomInteger(3, 15).result,
+    checkin: '12:00', // 12:00 / 13:00 / 14:00
+    checkout: '14:00', // 12:00 / 13:00 / 14:00
+    features: ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 'conditioner'],
+    description: 'Очень крутое помещение с плазмой и мягкой кроватью.',
+    photos: [
+      'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg',
+      'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg',
+      'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg',
+    ]
+  },
+  location: {lat, lng,},
+};
